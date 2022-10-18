@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.body {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Left section */
+.left {
+    font-family: 'Rubik', sans-serif;
+    background-image: url(./annie-spratt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 6rem;
+    height: 10rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+    box-sizing: border-box;
+}
+
+.imglogo {
+    height: 8rem;
+}
+
+.textlogo {
+    font-size: 2.5rem;
+}
+
+.left footer {
+    position: absolute;
+    bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+a, a:visited {
+    color: white;
+}
