@@ -134,3 +134,15 @@ input:focus {
     color: #25aa01;
     font-weight: 600;
 }
+
+.errortext {
+    color: red;
+    font-size: 0.8rem;  
+    max-width: 80%;  
+}
+
+.error {
+    outline: none;
+    border: 2px solid red;
+    border-radius: 5px;
+}

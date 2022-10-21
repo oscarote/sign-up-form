@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js" defer></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
         <p class="boldtext">You <em>know</em> you want to</p>
         <div class="formsection">
-            <form action="#">
+            <form onsubmit="return matchPwd()" action="#">
                 <div class="box">
                     <p class="boldtext">Let's do this!</p>
                     <div class="formgrid">
@@ -44,19 +45,23 @@
                         </div>
                         <div>
                             <label for="phone_number">Phone Number</label>
-                            <input type="tel" id="phone_number" name="phone_number" pattern="^(0034|\+34)?(\d\d\d)-? ?(\d\d)-? ?(\d)-? ?(\d)-? ?(\d\d)$">
+                            <input type="tel" id="phone_number" name="phone_number"
+                                pattern="^(0034|\+34)?(\d\d\d)-? ?(\d\d)-? ?(\d)-? ?(\d)-? ?(\d\d)$">
                         </div>
                         <div>
                             <label for="user_password">Password</label>
-                            <input type="password" id="user_password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-                            <span class="errortext"></span>
+                            <input type="password" id="user_password" name="password"
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                            <span class="errortext" id="error1"></span>
                         </div>
                         <div>
                             <label for="confirmpassword">Password</label>
-                            <input type="password" id="confirmpassword" name="confirmpasswrd" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                            <input type="password" id="confirmpassword" name="confirmpassword"
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                            <span class="errortext" id="error2"></span>
                         </div>
-                                        </div>
                     </div>
+                </div>
                 <button type="submit">Create Account</button>
             </form>
         </div>
