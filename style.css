@@ -19,6 +19,7 @@ body {
     height: 100vh;
     position: relative;
     color: white;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -52,7 +53,8 @@ body {
     width: 100%;
 }
 
-a, a:visited {
+.left a, 
+.left a:visited {
     color: white;
 }
 
@@ -64,6 +66,12 @@ a, a:visited {
     height: 100vh;
     color: black;
     padding: 7%;
+    box-sizing: border-box;
+}
+
+.right>p {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .boldtext {
@@ -71,21 +79,58 @@ a, a:visited {
     font-weight: 700;
 }
 
-.formsection {
+.box {
     background-color: white;
     box-shadow: 5px 5px 5px 5px gray;
-    padding: 5%;
+    padding: 2% 5% 5% 5%;
 }
 
 button {
     margin-top: 1.2rem;
     background-color: #1d672f;
     color: white;
-    font-size: 1rem;
-    padding: 0.1rem 0.3rem;
+    font-size: 1.3rem;
+    padding: 0.3rem 0.7rem;
+    margin-left: 2rem;
 }
 
-.formsection>form {
+.formgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.formgrid div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    max-width: 80%;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #25aa01;
+    border-radius: 5px;
+}
+
+.right a {
+    color: #25aa01;
+    font-weight: 600;
+}
+
+.right a:visited {
+    color: #25aa01;
+    font-weight: 600;
 }
